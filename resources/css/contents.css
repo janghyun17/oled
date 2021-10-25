@@ -90,8 +90,8 @@ section {position:relative;background:#fff;}
 .sce01_1 .visual_area .video video {position:absolute;left:50%;top:50%;min-width:100%;min-height:100%;width:auto !important;height:auto;transform:translate(-50%,-50%);}
 
 .sce01_2 {padding:35px 0 75px 0;background:#000;z-index:4}
-.c01_1 {height:calc((100vw - 60px) * 2.21);max-height:780px;background:#fff;}
-.c01_1 .img {position:absolute;left:0;bottom:0;width:100%;}
+.c01_1 {height:calc((100vw - 60px) * 2.3);max-height:820px;background:#edebeb;}
+.c01_1 .img {position:absolute;left:40px;bottom:30px;width:calc(100% - 55px);}
 .c01_2 {height:700px;max-height:inherit;padding-top:445px;background:#000 url("../images/img_c01_2.jpg") center top/100% no-repeat;color:#fff;}
 .c01_2 .txt .text {color:#ccc;}
 
