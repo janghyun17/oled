@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*
+    Layout.css
+*/
+
+/***** Common *****/
+* {margin:0;padding:0;}
+img {width:100%;border:none;vertical-align:top;}
+li {list-style:none;}
+
+
+
+
+
+/***** layout *****/
+body {background:#e4e4e4;color:#000;font-family:'LG Smart','Malgun Gothic','맑은 고딕',Dotum,Arial;font-size:14px;font-weight:400;line-height:20px;-webkit-text-size-adjust:none;}
+#wrap {position:relative;max-width:450px;margin:0 auto;height:100%;  background:#fff;text-align:center;overflow:hidden;}
+
+
+/*** header ***/
+header {position:relative;height:86px;padding-top:4px;background:#fff;border-bottom:1px solid #e4e4e4;box-sizing:border-box;z-index:10;}
+header:before {position:absolute;left:0;top:0;width:100%;height:4px;background:#d9d9d9;content:"";}
+
+/* mega_nav */
+.mega_nav {background:#fff;}
+.mega_nav li {position:relative;float:left;width:50%;height:32px;color:#6b6b6b;font-size:14px;font-weight:500;line-height:32px;text-align:center;overflow:hidden;}
+.mega_nav li:before {position:absolute;left:-2px;top:-30px;width:calc(100% + 5px);height:62px;background:#d9d9d9;border-radius:0 0 0 31px;content:"";}
+.mega_nav li span {position:relative;z-index:2;}
+.mega_nav li.on {background:#d9d9d9;color:#000;}
+.mega_nav li.on:before {left:0;top:0;background:#fff;border-radius:0 31px 0 0;}
+.mega_nav:after {display:block;clear:both;height:0;content:"";}
+
+/* gnb */
+#gnb {position:relative;height:47px;background:#fff url("../images/gnb_logo.jpg") center/auto 47px no-repeat;}
+#gnb:before {position:absolute;left:0;top:0;width:100px;height:47px;background:url("../images/gnb_left.jpg") left center/auto 47px no-repeat;content:"";}
+#gnb:after {position:absolute;right:0;top:0;width:100px;height:47px;background:url("../images/gnb_right.jpg") right center/auto 47px no-repeat;content:"";}
+
+
+
+
+/*** container ***/
+#container {position:relative;}
+
+
+
+/*** Footer ***/
+footer {position:relative;background:#000;z-index:10;}
+
+
+
+
+
+/***** Animation *****/
+@keyframes fade {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+@keyframes txtTop {
+0% {transform:translateY(110%);opacity:0;}
+100% {transform:translateY(0%);opacity:1;}
+}
+@keyframes imgTop {
+0% {transform:translateY(10%);opacity:0;}
+100% {transform:translateY(0%);opacity:1;}
+}
+@keyframes scale {
+0% {transform:scale(1.1);}
+100% {transform:scale(1);}
+}
+
+
+
+
+
+
+
+
+

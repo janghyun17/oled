@@ -1,0 +1,328 @@
+@charset "utf-8";
+/*
+    Contents.css
+*/
+
+
+/*** Common ***/
+/* scene_area */
+section {position:relative;background:#fff;}
+.section01 {z-index:1;}
+.section02 {z-index:2;}
+.section03 {z-index:3;}
+.section04 {z-index:4;}
+.section05 {z-index:5;}
+.scene_area {position:relative;}
+
+/* text */
+.eyebrow {position:relative;font-size:12px;font-weight:700;line-height:20px;z-index:2;}
+.title {position:relative;margin-right:-55px;margin-top:14px;font-size:30px;font-weight:700;line-height:34px;letter-spacing:-0.8px;z-index:2;}
+.text {position:relative;margin-top:20px;color:#707070;font-family:'Noto Sans';font-size:13px;font-weight:400;line-height:19px;letter-spacing:-0.2px;z-index:2;}
+
+/* Video */
+/*.video video {position:absolute;left:50%;top:50%;min-width:100%;min-height:100%;width:auto;height:100%;transform:translate(-50%,-50%);}*/
+.video video {position:absolute;left:50%;top:50%;min-width:100%;min-height:100%;width:auto;height:auto;transform:translate(-50%,-50%);}
+.video:after {position:absolute;left:0;top:0;width:100%;height:100%;background:#000;content:"";opacity:0.2;display:none;}
+
+/* color */
+.white,
+.white .text {color:#fff;}
+
+
+
+
+/* visual_area */
+.visual_area {position:relative;width:100%;max-width:450px;height:100vh;min-height:560px;background:#000;margin-bottom:75px;color:#fff;overflow:hidden;z-index:0;}
+.visual_area .txt {position:absolute;left:0;top:117px;width:100%;color:#fff;font-weight:700;text-align:center;}
+.visual_area .txt strong {display:block;position:relative;}
+.visual_area .txt .t1 {font-size:30px;line-height:36px;}
+.visual_area .txt .t2 {margin-top:20px;font-size:30px;line-height:36px;}
+.visual_area .txt .t3 {margin-top:17px;font-size:100px;line-height:100px;}
+.visual_area video {left:0;top:inherit;bottom:0;width:100% !important;height:auto;transform:translate(0,0);}
+
+.visual_area .txt .t3 span {position:relative;}
+.sce01_1 .visual_area .txt .t3 span {background:-webkit-linear-gradient(-45deg,#61faee 10%,#ecf0b4,#61faee 90%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent;vertical-align:top;-webkit-box-decoration-break:clone;animation:visual_txt both infinite 6s;}
+.sce02_1 .visual_area .txt .t3 span {background:-webkit-linear-gradient(-45deg,#7ef9f2 10%,#dbccff,#7ef9f2 90%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent;vertical-align:top;-webkit-box-decoration-break:clone;animation:visual_txt both infinite 6s;}
+.sce03_1 .visual_area .txt .t3 span {background:-webkit-linear-gradient(-45deg,#61faee 10%,#ecf0b4,#61faee 90%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent;vertical-align:top;-webkit-box-decoration-break:clone;animation:visual_txt both infinite 6s;}
+.sce04_1 .visual_area .txt .t3 span {background:-webkit-linear-gradient(-45deg,#fff,#fe9cc9,#fff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent;vertical-align:top;-webkit-box-decoration-break:clone;animation:visual_txt both infinite 6s;}
+.sce05_1 .visual_area .txt .t3 span {background:-webkit-linear-gradient(-45deg,#a28beb 10%,#fc9493,#a28beb 90%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent;vertical-align:top;-webkit-box-decoration-break:clone;animation:visual_txt both infinite 6s;}
+
+@keyframes visual_txt {
+0% {background-size:200% 100%;background-position:0 center}
+50% {background-size:200% 100%;background-position:100% center}
+100% {background-size:200% 100%;background-position:0 center}
+}
+
+
+
+/* box */
+.box {position:relative;height:calc((100vw - 60px) * 1.58);max-height:616px;margin:35px 30px 0 30px;padding:44px 40px;background:#edebeb;border-radius:20px;box-sizing:border-box;text-align:left;overflow:hidden;}
+.box:first-child {margin-top:0;}
+.box.bg {height:inherit;max-height:inherit;background:#fff;border:1px solid #edebeb;}
+.box .video video {position:absolute;left:0;top:0;min-width:auto;min-height:auto;width:100%;height:100%;transform:translate(0%,0%);}
+
+/* full */
+.full {position:relative;width:100%;height:100vh;box-sizing:border-box;text-align:left;overflow:hidden;z-index:3;}
+.full .txt {padding:0 70px}
+
+/* ani */
+.ani {opacity:0;transform:scale(0.85);transition:opacity 0.4s 0s, transform 0.4s 0s;;}
+.ani.active {opacity:1;transform:scale(1);transition:opacity 0.5s 0.3s, transform 0.5s 0.3s;}
+
+/* products_list */
+.products_list {position:relative;margin-top:25px;}
+.products_list li {margin-top:50px;}
+.products_list li:first-child {margin-top:0;}
+.products_list .prod_img {margin:0 -25px;}
+.products_list .prod_btn {max-width:300px;margin:0 auto;text-align:center;overflow:hidden;}
+.products_list .prod_btn a {display:inline-block;height:37px;border-radius:18px;box-sizing:border-box;vertical-align:top;}
+.products_list .prod_btn a.btn {float:left;width:calc(100% - 47px);background:#000;border:1px solid #000;color:#fff;font-weight:700;line-height:37px;text-decoration:none;}
+.products_list .prod_btn a.btn:only-child {width:100%;}
+.products_list .prod_btn a.btn.wh {background:#fff;color:#000;}
+.products_list .prod_btn a.btn_cart {float:right;width:37px;background:#e90080 url("../images/ico_cart.png") center/100% no-repeat;border-radius:50%;text-indent:-9999px;overflow:hidden;}
+
+
+
+
+
+/*** Section01 : OLED TV for ALL ***/
+.sce01_1 {background:#000;z-index:3;}
+.sce01_1 .visual_area .video video {position:absolute;left:50%;top:50%;min-width:100%;min-height:100%;width:auto !important;height:auto;transform:translate(-50%,-50%);}
+
+.sce01_2 {padding:35px 0 75px 0;background:#000;z-index:4}
+.c01_1 {height:calc((100vw - 60px) * 2.21);max-height:780px;background:#fff;}
+.c01_1 .img {position:absolute;left:0;bottom:0;width:100%;}
+.c01_2 {height:700px;max-height:inherit;padding-top:445px;background:#000 url("../images/img_c01_2.jpg") center top/100% no-repeat;color:#fff;}
+.c01_2 .txt .text {color:#ccc;}
+
+.sce01_3 {display:none;height:250vh;z-index:1;}
+.c01_3 {background:#000;}
+
+.c01_3 .inner {position:fixed;left:50%;top:0;width:100%;max-width:450px;height:100%;transform:translate(-50%, 0);overflow:hidden;}
+.c01_3 .img {position:absolute;top:0;left:50%;width:auto;height:100vh;transform:translate(-50%,0);filter:blur(50px);border:1px solid #000;box-shadow:1px 5px 20px 5px rgba(0,0,0,0.2);}
+.c01_3 .img span {position:absolute;left:0;top:0;width:100%;height:100%;background:#000;opacity:0.3;content:"";}
+.c01_3 .img img {width:inherit;height:100%;}
+.c01_3 .txt {position:absolute;left:0;top:50%;transform:translate(0,-50%);}
+.c01_3 .txt .text {opacity:0;}
+
+.sce01_4 {height:250vh;}
+.c01_4 {background:#000;}
+.c01_4 .img {position:absolute;left:50%;top:0;width:auto;height:80vh;transform:translate(-50%,30%);border:1px solid #000;box-shadow:1px 5px 20px 5px rgba(0,0,0,0.2);}
+.c01_4 .img img {width:inherit;height:100%;}
+.c01_4 .txt {position:absolute;left:0;top:75px;}
+.c01_4 .txt .text {opacity:0;}
+
+.sce01_5 {height:150vh;}
+.c01_5 {background:#000;}
+
+.c01_5 .img {position:absolute;left:0;top:0;width:auto;height:100%;}
+.c01_5 .img img {width:inherit;height:100%;}
+.c01_5 .txt {position:absolute;left:0;top:75px;}
+
+
+.sce01_6 {padding:35px 0 75px 0;background:#fff;z-index:4;}
+.c01_6 .img li {position: absolute;left:0;top:0;width:100%;height:100%;z-index:1;overflow:hidden;}
+.c01_6 .img li:nth-child(1) {background:url("../images/img_c01_6_1.jpg") center no-repeat;background-size:cover;}
+.c01_6 .img li:nth-child(2) {background:url("../images/img_c01_6_2.jpg") center no-repeat;background-size:cover;}
+.c01_6 .img li:nth-child(3) {background:url("../images/img_c01_6_3.jpg") center no-repeat;background-size:cover;}
+
+.c01_6.active {transition:none;}
+.c01_6.active .img li:nth-child(1) {animation:img_c01_6_1 both infinite 5s;}
+.c01_6.active .img li:nth-child(2) {animation:img_c01_6_2 both infinite 5s;}
+.c01_6.active .img li:nth-child(3) {animation:img_c01_6_3 both infinite 5s;}
+.c01_6.active,
+.c01_6.active .text {animation:img_c01_6_txt both infinite 5s;}
+
+@keyframes img_c01_6_txt {
+0% {color:#000;}
+25% {color:#000;}
+33% {color:#fff;}
+92% {color:#fff;}
+100% {color:#000;}
+}
+
+@keyframes img_c01_6_1 {
+0% {opacity:1;}
+25% {opacity:1;}
+33% {opacity:0;}
+92% {opacity:1;}
+100% {opacity:1;}
+}
+@keyframes img_c01_6_2 {
+0% {opacity:0;}
+25% {opacity:0;}
+33% {opacity:1;}
+58% {opacity:1;}
+66% {opacity:0;}
+100% {opacity:0;}
+}
+@keyframes img_c01_6_3 {
+0% {opacity:0;}
+58% {opacity:0;}
+66% {opacity:1;}
+92% {opacity:1;}
+100% {opacity:0;}
+}
+
+
+
+
+
+
+
+
+
+
+/*** Section02 : OLED TV for your family ***/
+.section02 {background:#000;}
+.sce02_1 {background:#000;}
+.sce02_2 {height:180vh;background:#000;overflow:hidden}
+.c02_1 .txt {position:absolute;left:0;bottom:20px;opacity:0;}
+
+
+.sce02_3 {height:180vh;background:#000;overflow:hidden;}
+.c02_2 .video video {width:200%;}
+.c02_2 .txt {position:absolute;left:0;bottom:20px;opacity:0;}
+	
+.sce02_4 {padding:35px 0 75px 0;background:#fff;z-index:4;}
+
+
+
+
+
+
+
+
+
+
+/*** Section03 : OLED TV for you ***/
+.section03 {background:#000;}
+.sce03_1 {background:#000;}
+.sce03_1 .visual_area {background:url("../images/visual_area03.jpg") center bottom/cover no-repeat;}
+
+
+.sce03_2 {height:400vh;}
+.c03_1 {background:#010101;}
+.c03_1 #inner_a {position:absolute;left:0;top:0;width:100%;height:100%;transition:background 0.4s;}
+.c03_1 .txt {position:absolute;left:-20px;top:110px;width:calc(100% - 95px);}
+.c03_1 .txt .text strong {color:#ccc;font-weight:400;}
+.c03_1 .txt strong {display:none;position:relative;}
+.c03_1 .txt strong.t0 {display:block;}
+.c03_1 .txt em {display:block;position:relative;overflow:hidden;}
+.c03_1 .txt i {display:block;position:relative;font-style:normal;}
+.c03_1 .title .t0 {font-size:60px;line-height:56px;}
+.c03_1 .img {position:absolute;left:-25%;bottom:0;width:150%;height:345px;transform:scale(0.5)}
+.c03_1 .img li {position: absolute;left:0;top:0;width:100%;height:100%;transition:opacity 0.4s;}
+.c03_1 .img .i1 {background:url("../images/img_c03_1.jpg") center top/ cover no-repeat;}
+.c03_1 .img .i2 {background:url("../images/img_c03_2.jpg") center top/ cover no-repeat;opacity:0;}
+.c03_1 .img .i3 {background:url("../images/img_c03_3.jpg") center top/ cover no-repeat;opacity:0;}
+
+.mov_class_b {background:#400e2b;}
+.mov_class_b .txt strong {display:none;}
+.mov_class_b .txt strong.t0 {display:none;}
+.mov_class_b .txt strong.t1 {display:block;}
+.mov_class_b .title .t1 i {animation:txtTop both 0.6s;}
+.mov_class_b .title .t1 em:nth-child(2) i {animation-delay:0.2s;}
+.mov_class_b .title .t1 em:nth-child(3) i {animation-delay:0.4s;}
+.mov_class_b .text {opacity:1;}
+.mov_class_b .text .t1 {animation:fade both 0.6s 0.6s;}
+
+.mov_class_c {background:#0c4750;}
+.mov_class_c .img .i2 {opacity:1;}
+.mov_class_c .txt strong {display:none;}
+.mov_class_c .txt strong.t0 {display:none;}
+.mov_class_c .txt strong.t2 {display:block;}
+.mov_class_c .title .t2 i {animation:txtTop both 0.6s;}
+.mov_class_c .title .t2 em:nth-child(2) i {animation-delay:0.2s;}
+.mov_class_c .title .t2 em:nth-child(3) i {animation-delay:0.4s;}
+.mov_class_c .title .t2 em:nth-child(4) i {animation-delay:0.6s;}
+.mov_class_c .text .t2 {animation:fade both 0.6s 0.8s;}
+
+
+.mov_class_d {background:#36155a;}
+.mov_class_d .img .i3 {opacity:1;}
+.mov_class_d .txt strong {display:none;}
+.mov_class_d .txt strong.t0 {display:none;}
+.mov_class_d .txt strong.t3 {display:block;}
+.mov_class_d .title .t3 i {animation:txtTop both 0.6s;}
+.mov_class_d .title .t3 em:nth-child(2) i {animation-delay:0.2s;}
+.mov_class_d .text .t3 {animation:fade both 0.6s 0.4s;}
+
+
+.sce03_3 {padding:35px 0 75px 0;background:#fff;z-index:4;}
+
+
+
+
+
+
+
+
+
+/*** Section04 : OLED TV for the virtual world ***/
+.sce04_1 .visual_area {background:#000;}
+.sce04_2 {padding-bottom:75px;}
+
+.c04_1 {height:calc((100vw - 60px) * 2.14);max-height:700px;}
+.c04_1 .video video {top:inherit;bottom:0;height:inherit;}
+.c04_1 .video:after {display:none;}
+
+.c04_2 {height:calc((100vw - 60px) * 2.14);max-height:760px;background:#edebeb url("../images/img_c04_2.png") center bottom/cover no-repeat;}
+
+
+
+
+
+
+
+
+
+
+
+/*** Section05 : OLED TV for the future ***/
+.sce05_1 .visual_area {background:#d6ccef}
+
+.c05_1 {height:calc((100vw - 60px) * 2.22);max-height:720px;margin-bottom:75px;background:#333 url("../images/img_c05_1.jpg") center bottom/100% auto no-repeat;}
+.c05_1 .title strong {display:block;font-size:52px;line-height:52px;}
+.c05_1 .title span {display:block;margin:12px 0 8px 0;color:#ec088b;font-size:40px;}
+
+
+.sce05_2 {height:400vh;}
+.c05_2 {height:100vh;background:#000;}
+.c05_2 .img {position:absolute;left:0;top:0;width:100%;height:100vh;}
+.c05_2 .img:after {position:absolute;left:0;top:0;width:100%;height:100%;background:#000;opacity:0.2;content:"";}
+.c05_2 .img.i1 {background:url("../images/img_c05_2.jpg") center /cover no-repeat;}
+.c05_2 .img.i2 {background:#d9eade;opacity:0;}
+.c05_2 .img.i2:after {display:none;}
+.c05_2 .img.i3 {background:url("../images/img_c05_2_2.jpg") center /cover no-repeat;opacity:0;}
+.c05_2 .txt {position:absolute;left:0;top:50%;transform:translate(0, -50%);z-index:1;}
+.c05_2 .txt .text {opacity:1;}
+
+.c05_2 .mask {position:absolute;left:-35px;top:-30px;width:calc(100% + 70px);height:calc(100% + 60px);border:0px solid #000;border-radius:20px;box-sizing:border-box;}
+.c05_2 .mask .s1:before,
+.c05_2 .mask .s1:after,
+.c05_2 .mask .s2:before,
+.c05_2 .mask .s2:after {position:absolute;width:21px;height:21px;background:url("../images/ico_mask.svg") center/100% no-repeat;content:"";}
+.c05_2 .mask .s1:before {left:-1px;top:-1px;}
+.c05_2 .mask .s1:after {right:-1px;top:-1px;transform:rotate(90deg);}
+.c05_2 .mask .s2:before {left:-1px;bottom:-1px;transform:rotate(-90deg);}
+.c05_2 .mask .s2:after {right:-1px;bottom:-1px;transform:rotate(180deg);}
+
+.c05_2 .img_obj {position:absolute;right:-75px;top:360px;width:100%;opacity:0;}
+
+
+
+.sce05_3 {padding:35px 0 75px 0;background:#fff;z-index:4;}
+
+
+
+
+
+
+
+
+
+
+
+
+
