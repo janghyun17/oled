@@ -41,8 +41,8 @@ $(function () {
 	
 	.to('.c01_3', 0.8, {background:'#fff', delay:0.5}, 1)
 	.to('.c01_3 .img', 2, {left:245, top:338, height:197, delay:0.8}, 1)
-	.to('.c01_3 .txt .text', 1, {opacity:1, delay:0}, 2)
-	.to('.c01_3 .txt, .c01_3 .txt .text', 1, {color:'#000', delay:-0.5}, 2)
+	.to('.c01_3 .txt .text', 1, {opacity:1, delay:0.5}, 2)
+	.to('.c01_3 .txt, .c01_3 .txt .text', 1, {color:'#000', delay:0}, 2)
 	.to('.c01_3', 4, {background:'#fff', delay:0}, 2)
 	
 	new ScrollMagic.Scene({
@@ -57,7 +57,7 @@ $(function () {
 	var c01_4 = new TimelineMax()
 	.to('.c01_4', 0.8, {background:'#fff', delay:0.8}, 0)
 	.to('.c01_4 .img', 2, {left:245, top:288, height:197, delay:0.8}, 0)
-	.to('.c01_4 .txt .text', 1, {opacity:1, delay:0}, 1)
+	.to('.c01_4 .txt .text', 1, {opacity:1, delay:0.5}, 1)
 	.to('.c01_4 .txt, .c01_4 .txt .text', 1, {color:'#000', delay:0}, 1)
 	.to('.c01_4', 4, {background:'#fff', delay:0}, 1)
 
