@@ -97,7 +97,7 @@ section {position:relative;background:#fff;}
 .c01_2 {height:700px;max-height:inherit;padding-top:445px;background:#000 url("../images/img_c01_2.jpg") center top/100% no-repeat;color:#fff;}
 .c01_2 .txt .text {color:#ccc;}
 
-.sce01_3 {display:none;height:250vh;z-index:1;}
+.sce01_3 {display:block;height:250vh;z-index:1;}
 .c01_3 {background:#000;}
 
 .c01_3 .inner {position:fixed;left:50%;top:0;width:100.3%;max-width:450px;height:100%;transform:translate(-50%, 0);overflow:hidden;}
