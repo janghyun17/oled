@@ -13,7 +13,7 @@ $(function () {
 	.to('.sce01_1 .visual_area .txt .t2', 1, {top:-30, opacity:0, scale:0.7, delay:0.9}, 0)
 	.to('.sce01_1 .visual_area .txt .t3', 1, {top:-60, opacity:0, scale:0.7, delay:0.95}, 0)
 	.to('.sce01_1 .visual_area', 0.8, {opacity: 0, delay:1.2} ,0)
-	.to('.sce01_3', 0.8, {display:'block', delay:1.2}, 0)
+	//.to('.sce01_3', 0.8, {display:'block', delay:1.2}, 0)
 
 	new ScrollMagic.Scene({
 		triggerElement:'.sce01_1',
